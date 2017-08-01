@@ -1,9 +1,1 @@
-{"winners":[
-  {
-    "id":1,
-    "name":"Seth",
-    "word":"zootypical",
-    "guesses":11,
-    "difficulty":"Hard"
-  }
-]}
+{"winners":[{"id":1,"name":"Seth","word":"zootypical","guesses":11,"difficulty":"Hard"},{"id":1,"name":"Seth Carrino","word":"muran","guesses":12,"difficulty":"Easy"}]}

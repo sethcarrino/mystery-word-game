@@ -1,3 +1,6 @@
+"use strict";
+
+
 const express = require('express');
 const router = express.Router()
 const exphbs = require('express-handlebars');
@@ -34,7 +37,7 @@ router.get("/play", function (req, res) {
   if (req.session.game) {
     let game = req.session.game[0];
       res.render('play', { display: game });
-    // }
+
   } else {
     res.redirect('/');
   }

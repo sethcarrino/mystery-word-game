@@ -1,3 +1,5 @@
+"use strict";
+
 const express = require('express');
 const exphbs = require('express-handlebars');
 const bodyParser = require('body-parser');
@@ -22,7 +24,15 @@ app.engine('handlebars', exphbs());
 app.set('views', './views')
 app.set('view engine', 'handlebars')
 
-// setup seesion middleware
+// serve public files
+app.use(express.static('public'));
+
+// both body-parser and validator setup for middleware
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(expressValidator());
+
+// setup session middleware
 app.use(session({
   secret: 'V4P3N4710N',
   resave: false,
