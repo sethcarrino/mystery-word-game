@@ -1,5 +1,3 @@
-"use strict";
-
 // setting up a way for users to just type out word
 
 const guess = document.getElementById('current-guess');

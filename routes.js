@@ -1,6 +1,3 @@
-"use strict";
-
-
 const express = require('express');
 const router = express.Router()
 const exphbs = require('express-handlebars');
