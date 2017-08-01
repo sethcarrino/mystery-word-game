@@ -9,7 +9,7 @@ const jsonfile = require('jsonfile');
 
 
 // require other js code for routing
-const router =  require('./router');
+const routes =  require('./routes');
 const workings = require('./workings');
 
 
@@ -30,7 +30,7 @@ app.use(session({
   cookie: {}}))
 
 // setup router to use
-app.use(router);
+app.use(routes);
 
 // listen on designated port
 app.listen(3000, function(){
